@@ -21,7 +21,22 @@ export const GlobalStyles = createGlobalStyle`
     transition: all 0.25s linear;
   }
 
+  footer {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  small {
+    display: block;
+  }
+
   button {
     display: block;
+  }
+
+  a {
+    color: ${({ theme }) => theme.text};
   }
 `;
