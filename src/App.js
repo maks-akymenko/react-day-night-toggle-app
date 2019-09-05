@@ -8,8 +8,12 @@ import { GlobalStyles } from './global';
 import Toggle from './components/Toggle';
 
 function App() {
-  const [theme, toggleTheme] = useDarkMode();
+  const [theme, toggleTheme, componentMounted] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
+  if (!componentMounted) {
+    return <div />
+  };
 
   return (
     <ThemeProvider theme={themeMode}>
@@ -25,6 +29,6 @@ function App() {
       </>
     </ThemeProvider>
   );
-}
+};
 
 export default App;
