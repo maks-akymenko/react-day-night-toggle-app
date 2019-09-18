@@ -11,6 +11,7 @@ const ToggleContainer = styled.div`
   justify-content: space-between;
   background: ${({ theme }) => theme.gradient};
   width: 8rem;
+  height: 3.5rem;
   margin: 0 auto;
   border-radius: 30px;
   border: 2px solid ${({ theme }) => theme.toggleBorder};
