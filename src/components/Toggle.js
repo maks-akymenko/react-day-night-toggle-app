@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { ReactComponent as MoonIcon } from 'icons/moon.svg';
 import { ReactComponent as SunIcon } from 'icons/sun.svg';
 
-const ToggleContainer = styled.div`
+const ToggleContainer = styled.button`
   position: relative;
   display: flex;
   justify-content: space-between;
